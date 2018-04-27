@@ -1,7 +1,10 @@
-document html
+block variables
+
+doctype html
 html(lang="ru")
 	head
 		meta(charset="UTF-8")
-		title Тестируем интенсив Сборка
+		title #{title}
+		link(rel="stylesheet", href="css/main.css")
 	body
-		
+		block content
