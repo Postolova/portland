@@ -1,7 +1,38 @@
 extends ../layouts/layout.pug
 
 block variables
-	-var title = "Верстка макета"
+	-var title = "Portland"
 
 block content
 	include ../sections/header.pug
+	include ../sections/header-navigation.pug
+	include ../sections/filter.pug
+
+	.container
+		.row
+			.col-md-3 Меню
+
+			.col-md-9
+				.row
+					.col-md-4
+						+product-card('apple-tv.jpg', 'Apple TV 32GB', 'Black', '$49.99')
+					.col-md-4
+						+product-card('watch.jpg', 'Pebble Time', 'Red', '$29.99')
+					.col-md-4
+						+product-card('zendure.jpg', 'Zendure 4-Port USB', 'White', '$49.99')
+					.col-md-4
+						+product-card('analyzer.jpg', 'Withings Smart Body Analyzer ws-50', 'Black', '$39.99')
+					.col-md-8
+						+product-card-big('jbl-bg.jpg', 'BL Charge 2+', 'Black', '$39.99', '16  Gb')
+					.col-md-4
+						+product-card('ollo.jpg', 'Ollo Clip New', 'Silver', '$19.99')
+					.col-md-4
+						+product-card('tracker.jpg', 'Fitbit Charge HR Heart Rate and Activity Tracker', 'Black', '$19.99')
+					.col-md-4
+						+product-card('apple-watch.jpg', 'Apple Watch Sport 38mm Silver Aluminum Case', 'White', '$49.99')
+					.col-md-4
+						+product-card('headphones.jpg', 'Bose SoundLink On-Ear Headphones', 'White', '$119.99')
+					.col-md-4
+						+product-card('hifi.jpg', 'Sonos Play-1 Wireless HiFi System', 'Black', '$99.99')
+					.col-md-4
+						+product-card-market('thermostat-bg.jpg', 'Nest Learning Thermostat, 3rd Generation', '$49.99')

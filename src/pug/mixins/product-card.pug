@@ -1,0 +1,27 @@
+mixin product-card(imgsrc, title, color, price)
+	.product-card
+		.product-card__image
+			img(src="img/products/" + imgsrc, alt="photo")
+		.product-card-content
+			.product-card__title= title
+			.product-card__color= color
+			.product-card__price= price
+
+mixin product-card-big(imgsrc, title, color, price, spec)
+	.product-card-big
+		.product-card-big__image(style="background-image: url('./img/products/"+imgsrc+"')")
+			.product-card-big__price= price
+		.product-card-big-content
+			div
+				.product-card-big__title= title
+				.product-card-big__color= color
+			.button-group
+				.button= spec
+				.button Buy Now
+
+mixin product-card-market(imgsrc, title, price)
+	.product-card-market
+		.product-card-market-content
+			.product-card-market__title= title
+			.product-card-market__price= price
+		.product-card-market__image(style="background-image: url('./img/products/"+imgsrc+"')")

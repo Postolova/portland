@@ -1,0 +1,31 @@
+.filter.container
+		.filter-sort
+			.sort__title Sort by:
+			select.select-sort
+				option.select-sort__items Best match
+				option.select-sort__items Best sellers
+				option.select-sort__items Best rated
+				option.select-sort__items Best mutch
+				option.select-sort__items Price low to high
+				option.select-sort__items Price high to low
+		.filter-keywords
+			.filter-keywords_title keywords
+			input(type="text", placeholder="Tablet").keywords__input
+		.filter-price
+			.filter-price__title price
+			input(type="text" value="10").filter-price__from
+			.filter-price__dush -
+			input(type="text" value="1000").filter-price__to
+		.filter-free-shipping
+			input(type="checkbox" id="check").free-shipping__check
+			label(for="check").free-shipping__title Free Shipping
+		.filter-ship-to
+			.ship-to-title Ship. To
+			select.ship-to-select
+				option.ship-to-select__items usa
+				option.ship-to-select__items canada
+				option.ship-to-select__items china
+
+
+
+

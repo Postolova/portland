@@ -1,0 +1,25 @@
+.navigation-list {
+	display: flex;
+	font-size: 14px;
+	color: #b9bed1;
+	text-transform: uppercase;
+	letter-spacing: 1.1px;
+}
+
+.navigaton-list__item {
+	margin-right: 30px;
+	text-decoration: none;
+	color: #b9bed1;
+		&:last-child {
+		margin-right: 0;
+	}
+	&:hover:not(.navigaton-list__item--active) {
+		text-decoration: underline;
+		color: darkBlue;
+	}	
+}
+
+.navigaton-list__item--active {
+	color: darkBlue;
+	font-weight: 800;
+}

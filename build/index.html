@@ -1,20 +1,199 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Верстка макета</title>
-    <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8"/>
+    <title>Portland</title>
+    <link rel="stylesheet" href="css/main.css"/>
   </head>
   <body>
-    <header class="header"><a href="#"><img src="img/logo/logo.svg" alt="Logo"></a>
-      <nav class="nav"><a class="nav-link" href="#">Home</a><a class="nav-link" href="#">Devices</a><a class="nav-link" href="#">Delivery & Payment</a><a class="nav-link" href="#">Guarantee</a><a class="nav-link" href="#">About Us</a></nav>
-      <div class="header-right">
-        <div class="header-cart">
-          <div class="header-cart__icon"><img src="img/icons/cart-icon.svg" alt="Cart"></div>
-          <div class="header-cart__title">Cart</div>
-          <div class="header-cart__counter">0</div>
-        </div><a class="header-sign">Sign-In</a>
+    <header class="header-bg">
+      <div class="container">
+        <div class="header"><a heder="#"><img src="img/logo/portland.svg" alt="Logo"/></a>
+          <nav class="nav"><a class="nav-link" href="#">Home</a><a class="nav-link" href="#">Device</a><a class="nav-link" href="#">About Us</a><a class="nav-link" href="#">Guarantee</a><a class="nav-link" href="#">Delivery & Payment</a></nav>
+          <div class="header-right">
+            <div class="header-cart">
+              <div class="header-cart__icon"><img src="img/icons/shopping-cart-icon.svg" alt="Cart"></div>
+              <div class="header-cart__title">Cart</div>
+              <div class="header-cart__counter">0</div>
+            </div>
+          </div><a class="button">Sign In</a>
+        </div>
       </div>
     </header>
+    <div class="header-navigation-bg">
+      <div class="container">
+        <div class="header-navigation">
+          <div class="navigation-list"><a class="navigaton-list__item" href="#">Top Sales</a><a class="navigaton-list__item" href="#">Brand Focus</a><a class="navigaton-list__item navigaton-list__item--active" href="#">Hi-tech</a><a class="navigaton-list__item" href="#">Projects</a><a class="navigaton-list__item" href="#">Best Sellers</a></div>
+          <div class="header-navigation-right">
+            <div class="header-support">Support</div>
+            <div class="header-search">
+              <label class="header-search__label"></label>
+              <input class="header-search__input" type="text" placeholder="I’m looking for"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="filter container">
+      <div class="filter-sort">
+        <div class="sort__title">Sort by:</div>
+        <select class="select-sort">
+          <option class="select-sort__items">Best match</option>
+          <option class="select-sort__items">Best sellers</option>
+          <option class="select-sort__items">Best rated</option>
+          <option class="select-sort__items">Best mutch</option>
+          <option class="select-sort__items">Price low to high</option>
+          <option class="select-sort__items">Price high to low</option>
+        </select>
+      </div>
+      <div class="filter-keywords">
+        <div class="filter-keywords_title">keywords</div>
+        <input class="keywords__input" type="text" placeholder="Tablet"/>
+      </div>
+      <div class="filter-price">
+        <div class="filter-price__title">price</div>
+        <input class="filter-price__from" type="text" value="10"/>
+        <div class="filter-price__dush">-</div>
+        <input class="filter-price__to" type="text" value="1000"/>
+      </div>
+      <div class="filter-free-shipping">
+        <input class="free-shipping__check" type="checkbox" id="check"/>
+        <label class="free-shipping__title" for="check">Free Shipping</label>
+      </div>
+      <div class="filter-ship-to">
+        <div class="ship-to-title">Ship. To</div>
+        <select class="ship-to-select">
+          <option class="ship-to-select__items">usa</option>
+          <option class="ship-to-select__items">canada</option>
+          <option class="ship-to-select__items">china</option>
+        </select>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">Меню</div>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="product-card">
+                <div class="product-card__image"><img src="img/products/apple-tv.jpg" alt="photo"/></div>
+                <div class="product-card-content">
+                  <div class="product-card__title">Apple TV 32GB</div>
+                  <div class="product-card__color">Black</div>
+                  <div class="product-card__price">$49.99</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-card">
+                <div class="product-card__image"><img src="img/products/watch.jpg" alt="photo"/></div>
+                <div class="product-card-content">
+                  <div class="product-card__title">Pebble Time</div>
+                  <div class="product-card__color">Red</div>
+                  <div class="product-card__price">$29.99</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-card">
+                <div class="product-card__image"><img src="img/products/zendure.jpg" alt="photo"/></div>
+                <div class="product-card-content">
+                  <div class="product-card__title">Zendure 4-Port USB</div>
+                  <div class="product-card__color">White</div>
+                  <div class="product-card__price">$49.99</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-card">
+                <div class="product-card__image"><img src="img/products/analyzer.jpg" alt="photo"/></div>
+                <div class="product-card-content">
+                  <div class="product-card__title">Withings Smart Body Analyzer ws-50</div>
+                  <div class="product-card__color">Black</div>
+                  <div class="product-card__price">$39.99</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="product-card-big">
+                <div class="product-card-big__image" style="background-image: url('./img/products/jbl-bg.jpg')">
+                  <div class="product-card-big__price">$39.99</div>
+                </div>
+                <div class="product-card-big-content">
+                  <div>
+                    <div class="product-card-big__title">BL Charge 2+</div>
+                    <div class="product-card-big__color">Black</div>
+                  </div>
+                  <div class="button-group">
+                    <div class="button">16  Gb</div>
+                    <div class="button">Buy Now</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-card">
+                <div class="product-card__image"><img src="img/products/ollo.jpg" alt="photo"/></div>
+                <div class="product-card-content">
+                  <div class="product-card__title">Ollo Clip New</div>
+                  <div class="product-card__color">Silver</div>
+                  <div class="product-card__price">$19.99</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-card">
+                <div class="product-card__image"><img src="img/products/tracker.jpg" alt="photo"/></div>
+                <div class="product-card-content">
+                  <div class="product-card__title">Fitbit Charge HR Heart Rate and Activity Tracker</div>
+                  <div class="product-card__color">Black</div>
+                  <div class="product-card__price">$19.99</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-card">
+                <div class="product-card__image"><img src="img/products/apple-watch.jpg" alt="photo"/></div>
+                <div class="product-card-content">
+                  <div class="product-card__title">Apple Watch Sport 38mm Silver Aluminum Case</div>
+                  <div class="product-card__color">White</div>
+                  <div class="product-card__price">$49.99</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-card">
+                <div class="product-card__image"><img src="img/products/headphones.jpg" alt="photo"/></div>
+                <div class="product-card-content">
+                  <div class="product-card__title">Bose SoundLink On-Ear Headphones</div>
+                  <div class="product-card__color">White</div>
+                  <div class="product-card__price">$119.99</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-card">
+                <div class="product-card__image"><img src="img/products/hifi.jpg" alt="photo"/></div>
+                <div class="product-card-content">
+                  <div class="product-card__title">Sonos Play-1 Wireless HiFi System</div>
+                  <div class="product-card__color">Black</div>
+                  <div class="product-card__price">$99.99</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="product-card-market">
+                <div class="product-card-market-content">
+                  <div class="product-card-market__title">Nest Learning Thermostat, 3rd Generation</div>
+                  <div class="product-card-market__price">$49.99</div>
+                </div>
+                <div class="product-card-market__image" style="background-image: url('./img/products/thermostat-bg.jpg')"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
