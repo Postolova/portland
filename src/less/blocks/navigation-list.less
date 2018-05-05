@@ -10,16 +10,40 @@
 	margin-right: 30px;
 	text-decoration: none;
 	color: #b9bed1;
-		&:last-child {
+	line-height: 1;
+    display: inline-block;
+    &:after {
+	    display: block;
+	    content: '';
+	    height: 2px;
+	    width: 0%;
+	    background-color: darkBlue;
+	    transition: width .3s ease-in-out;
+    }
+	&:last-child {
 		margin-right: 0;
 	}
-	&:hover:not(.navigaton-list__item--active) {
-		text-decoration: underline;
+	&:hover:not(.navigaton-list__item--active):after,
+	&:focus:after {
+		width: 100%;
 		color: darkBlue;
 	}	
+	&:hover {
+		color: darkBlue;	
+	}
 }
 
 .navigaton-list__item--active {
 	color: darkBlue;
-	font-weight: 800;
+	font-weight: 600;
+	&:after {
+	    display: block;
+	    content: ' ';
+	    width: 100%;
+	    height: 2px;
+	    background-color: darkBlue;
+    }
 }
+/*
+ :not(.navigaton-list__item--active)
+}*/

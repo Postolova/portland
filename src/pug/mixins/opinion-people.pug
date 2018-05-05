@@ -1,0 +1,8 @@
+mixin opinion-people(imgsrc, name, professional, text)
+	.opinion-people__block
+		.opinion-people__img
+			img(src="img/people/" + imgsrc, alt="photo")
+		.opinion-people__autor
+			.opinion-people__name= name
+			.opinion-people__profession= professional
+		.opinion-prople__text= text

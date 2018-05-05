@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=1200"/>
+    <meta name="viewport" content="width=device-width initial-scale=1"/>
     <title>Portland</title>
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous"/>
   </head>
   <body>
     <header class="header-bg">
@@ -16,7 +19,7 @@
               <div class="header-cart__title">Cart</div>
               <div class="header-cart__counter">0</div>
             </div>
-          </div><a class="button">Sign In</a>
+          </div><a class="button signin" href="#modalSignin">Sign In</a>
         </div>
       </div>
     </header>
@@ -71,8 +74,116 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-3">Меню</div>
-        <div class="col-md-9">
+        <div class="col-md-3">
+          <div class="information-sidebar">
+            <ul class="information-menu">
+              <li class="information-menu__list"><a class="information-menu__items" href="#">Top Sales
+                  <ul class="information-menu-second">
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Example 1</a></li>
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Example 2</a></li>
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Example 3</a></li>
+                  </ul></a></li>
+              <li class="information-menu__list"><a class="information-menu__items" href="#">Brand Focus
+                  <ul class="information-menu-second">
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Example 1</a></li>
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Example 2</a></li>
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Example 3</a></li>
+                  </ul></a></li>
+              <li class="information-menu__list"><a class="information-menu__items" href="#">Hi-Tech
+                  <ul class="information-menu-second visible">
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Cell Phones</a></li>
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Cameras</a></li>
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Computers</a></li>
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Tv, Audio</a></li>
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Video Games</a></li>
+                  </ul></a></li>
+              <li class="information-menu__list"><a class="information-menu__items" href="#">Home
+                  <ul class="information-menu-second">
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Example 1</a></li>
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Example 2</a></li>
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Example 3</a></li>
+                  </ul></a></li>
+              <li class="information-menu__list"><a class="information-menu__items" href="#">Sale
+                  <ul class="information-menu-second">
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Example 1</a></li>
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Example 2</a></li>
+                    <li class="information-menu-second__list"><a class="information-menu-second__items" href="#">Example 3</a></li>
+                  </ul></a></li>
+            </ul>
+            <div class="availablebrands">
+              <div class="available">
+                <div class="available-title">Available</div>
+                <div class="available-storage-block">
+                  <div class="available-storage">
+                    <input class="available-storage__checkbox" type="radio" name="available" id="instorage" checked="checked"/>
+                    <label class="available-storage__title" for="instorage">In Storage</label>
+                    <div class="available-storage__count">45</div>
+                  </div>
+                  <div class="available-storage">
+                    <input class="available-storage__checkbox" type="radio" name="available" id="onlisneshop"/>
+                    <label class="available-storage__title" for="onlisneshop">Online-Shop</label>
+                    <div class="available-storage__count">12</div>
+                  </div>
+                </div>
+              </div>
+              <div class="brands">
+                <div class="brands-title"> Brands
+                  <div class="brands-link"><a href="#">All</a></div>
+                </div>
+                <div class="brands-list">
+                  <div class="brands-list__items">
+                    <input class="brands__checkbox" type="checkbox" name="available" id="apple"/>
+                    <label class="brands-list__title" for="apple">Apple</label>
+                    <div class="brands__count">32</div>
+                  </div>
+                  <div class="brands-list__items">
+                    <input class="brands__checkbox" type="checkbox" name="available" id="jbl"/>
+                    <label class="brands-list__title" for="jbl">JBL</label>
+                    <div class="brands__count">14</div>
+                  </div>
+                  <div class="brands-list__items">
+                    <input class="brands__checkbox" type="checkbox" name="available" id="bose"/>
+                    <label class="brands-list__title" for="bose">Bose</label>
+                    <div class="brands__count">3</div>
+                  </div>
+                  <div class="brands-list__items">
+                    <input class="brands__checkbox" type="checkbox" name="available" id="nest"/>
+                    <label class="brands-list__title" for="nest">Nest</label>
+                    <div class="brands__count">5</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="condition">
+              <div class="condition-title"> Condition
+                <div class="condition-link"><a href="#">See All</a></div>
+              </div>
+              <div class="condition-list">
+                <div class="condition-list__items">
+                  <input class="condition__checkbox" type="checkbox" name="condition" id="new"/>
+                  <label class="condition-list__title" for="new">New</label>
+                </div>
+                <div class="condition-list__items">
+                  <input class="condition__checkbox" type="checkbox" name="condition" id="manufacturer"/>
+                  <label class="condition-list__title" for="manufacturer">Manufacturer Refurbished</label>
+                </div>
+                <div class="condition-list__items">
+                  <input class="condition__checkbox" type="checkbox" name="condition" id="seller"/>
+                  <label class="condition-list__title" for="seller">Seller Refurbished</label>
+                </div>
+                <div class="condition-list__items">
+                  <input class="condition__checkbox" type="checkbox" name="condition" id="used"/>
+                  <label class="condition-list__title" for="used">Used</label>
+                </div>
+                <div class="condition-list__items">
+                  <input class="condition__checkbox" type="checkbox" name="condition" id="forparts"/>
+                  <label class="condition-list__title" for="forparts">For Parts or not Working</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9"> 
           <div class="row">
             <div class="col-md-4">
               <div class="product-card">
@@ -94,7 +205,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 pr-0">
               <div class="product-card">
                 <div class="product-card__image"><img src="img/products/zendure.jpg" alt="photo"/></div>
                 <div class="product-card-content">
@@ -114,7 +225,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 pr-0">
               <div class="product-card-big">
                 <div class="product-card-big__image" style="background-image: url('./img/products/jbl-bg.jpg')">
                   <div class="product-card-big__price">$39.99</div>
@@ -151,7 +262,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 pr-0">
               <div class="product-card">
                 <div class="product-card__image"><img src="img/products/apple-watch.jpg" alt="photo"/></div>
                 <div class="product-card-content">
@@ -181,7 +292,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 pr-0">
               <div class="product-card-market">
                 <div class="product-card-market-content">
                   <div class="product-card-market__title">Nest Learning Thermostat, 3rd Generation</div>
@@ -194,6 +305,100 @@
         </div>
       </div>
     </div>
+    <div class="container p-0">
+      <div class="pagination">
+        <div class="pagination__slider-left"><a href="#"></a></div>
+        <div class="pagination__items">
+          <div class="paginaton-list m-0 pl-0"><a class="pagination-list__items" href="#">1</a><a class="pagination-list__items" href="#">2</a><a class="pagination-list__items" href="#">3</a><a class="pagination-list__items" href="#">4</a><a class="pagination-list__items" href="#">5</a><a class="pagination-list__items" href="#">6</a><a class="pagination-list__items" href="#">7</a><a class="pagination-list__items" href="#">8</a></div>
+        </div>
+        <div class="pagination__slider-right"><a href="#"></a></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="bestseller__title">Best Sellers</div>
+      <div class="bestseller">
+        <div class="product-card-bestseller">
+          <div class="product-card-bestseller__image" style="background-image: url('./img/products/beanie.png')"></div>
+          <div class="product-card-bestseller-content">
+            <div class="product-card-bestseller__title">Beanie</div>
+            <div class="product-card-bestseller__color">green</div>
+            <div class="product-card-bestseller__oldprice">£39.99</div>
+            <div class="product-card-bestseller__newprice">£29.99</div>
+          </div>
+        </div>
+        <div class="product-card-bestseller">
+          <div class="product-card-bestseller__image" style="background-image: url('./img/products/t-short.png')"></div>
+          <div class="product-card-bestseller-content">
+            <div class="product-card-bestseller__title">T-Shirt With a Print</div>
+            <div class="product-card-bestseller__color">Dark Blue</div>
+            <div class="product-card-bestseller__oldprice">£29.99</div>
+            <div class="product-card-bestseller__newprice">£19.99</div>
+          </div>
+        </div>
+        <div class="product-card-bestseller">
+          <div class="product-card-bestseller__image" style="background-image: url('./img/products/jacket.png')"></div>
+          <div class="product-card-bestseller-content">
+            <div class="product-card-bestseller__title">Pile-Lined Hooded Jacket</div>
+            <div class="product-card-bestseller__color">Dark Blue</div>
+            <div class="product-card-bestseller__oldprice">£49.99</div>
+            <div class="product-card-bestseller__newprice">£39.99</div>
+          </div>
+        </div>
+        <div class="product-card-bestseller">
+          <div class="product-card-bestseller__image" style="background-image: url('./img/products/trainers.png')"></div>
+          <div class="product-card-bestseller-content">
+            <div class="product-card-bestseller__title">Trainers</div>
+            <div class="product-card-bestseller__color">Space Grey</div>
+            <div class="product-card-bestseller__oldprice">£39.99</div>
+            <div class="product-card-bestseller__newprice">£29.99</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="opinion">
+      <div class="opinion__title">What Our Customers Have to Say</div>
+      <div class="opinion__about">Couple of Words About This Stories Section</div>
+      <div class="opinion__items">
+            <div class="opinion-people__block">
+              <div class="opinion-people__img"><img src="img/people/celia.png" alt="photo"/></div>
+              <div class="opinion-people__autor">
+                <div class="opinion-people__name">Celia Fields</div>
+                <div class="opinion-people__profession">UX Expert</div>
+              </div>
+              <div class="opinion-prople__text">This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.</div>
+            </div>
+            <div class="opinion-people__block">
+              <div class="opinion-people__img"><img src="img/people/alexandr.png" alt="photo"/></div>
+              <div class="opinion-people__autor">
+                <div class="opinion-people__name">Alexander Lee</div>
+                <div class="opinion-people__profession">Founder</div>
+              </div>
+              <div class="opinion-prople__text">Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</div>
+            </div>
+            <div class="opinion-people__block">
+              <div class="opinion-people__img"><img src="img/people/lenora.png" alt="photo"/></div>
+              <div class="opinion-people__autor">
+                <div class="opinion-people__name">Lenora Sandoval</div>
+                <div class="opinion-people__profession">Product Manager</div>
+              </div>
+              <div class="opinion-prople__text">This sounded a very good reason, and Alice was quite pleased to know it. &quot;I never thought of that before!&quot; she said.</div>
+            </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer-block">
+          <div class="footer-logo"><img src="./img/logo/portland-white.png" alt="logo"/></div>
+          <div class="footer-menu"><a class="footer-menu__items" href="#">Home</a><a class="footer-menu__items" href="#">Shope</a><a class="footer-menu__items" href="#">Team</a><a class="footer-menu__items" href="#">About us</a><a class="footer-menu__items" href="#">Contact</a></div>
+          <div class="footer-message"><a class="footer-message__items" href="#"> <i class="fab fa-twitter footer-message__icon twitter" aria-hidden="true"></i></a><a class="footer-message__items" href="#"><i class="fab fa-facebook-f footer-message__icon facebook" aria-hidden="true"> </i></a><a class="footer-message__items" href="#"><i class="fab fa-google-plus-g footer-message__icon google" aria-hidden="true"> </i></a></div>
+        </div>
+        <div class="footer-info">
+          <div class="footer-cite">She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for having been born on a Friday.</div>
+          <div class="footer-menulink"><a class="footer-menu-link__items" href="#">Privacy Policy</a><a class="footer-menu-link__items" href="#">Terms and Conditions</a></div>
+        </div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -5,9 +5,16 @@ block variables
 html(lang="en")
 	head
 		meta(charset="UTF-8")
+		meta(name="viewport" content="width=1200")
+		meta(name="viewport" content="width=device-width initial-scale=1")
 		title #{title}
 		link(rel="stylesheet", href="css/main.css")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous")
+
+
 	body
 		block content
+		block footer
 
+		script(src="http://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous")
 		script(src="js/main.js")

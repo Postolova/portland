@@ -58,7 +58,10 @@
 	border: none;
 	padding: 5px;
 	border: 1px solid rgba(161, 168, 189, 0.2);
-	&::-webkit-input-placeholder {
+	&:focus {
+		box-shadow: 1px 1px 2px 0 blueGray;
+	}
+/*	&::-webkit-input-placeholder {
 		color: #a1a8bd;
 	}
 	&:focus::-webkit-input-placeholder {
@@ -73,5 +76,5 @@
 	}
 	&::-ms-input-placeholder {
 		color: #a1a8bd;
-	}
+	}*/
 }

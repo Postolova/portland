@@ -25,3 +25,13 @@ mixin product-card-market(imgsrc, title, price)
 			.product-card-market__title= title
 			.product-card-market__price= price
 		.product-card-market__image(style="background-image: url('./img/products/"+imgsrc+"')")
+
+mixin product-card-bestseller(imgsrc, title, color, oldprice, newprice)
+	.product-card-bestseller
+		.product-card-bestseller__image(style="background-image: url('./img/products/"+imgsrc+"')")
+		.product-card-bestseller-content
+			.product-card-bestseller__title= title
+			.product-card-bestseller__color= color
+			.product-card-bestseller__oldprice= oldprice
+			.product-card-bestseller__newprice= newprice
+
