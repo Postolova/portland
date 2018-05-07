@@ -5,6 +5,15 @@
 	align-items: center;
 	margin-bottom: 30px;
 	height: 56px;
+	@media (max-width: 1300px) {
+		position: relative;
+		width: 100%;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
 }
 
 .filter-sort {
@@ -13,6 +22,7 @@
 	height: 100%;
 	border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .sort__title {
 	color: #a1a8bd;
 	font-size: 11px;
