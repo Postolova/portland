@@ -1,17 +1,20 @@
 #modalSignin
-  section.container
+  section.container.modalstyle
     .login
-      h1 Войти в личный кабинет
+      a(href="#").close
+        i(class="fa fa-window-close" aria-hidden="true")
+      h1.modal-title Hello!  
       form(method="post" action="index.html")
         p
-          input(type="text" name="login" value="" placeholder="Логин или Email")
+          input(type="text" name="login" value="" placeholder="Login or Email")
         p
-          input(type="password" name="password" value="" placeholder="Пароль")
+          input(type="password" name="password" value="" placeholder="Password")
         p.remember_me
-          label Запомни меня
+          label Remember
             input(type="checkbox" name="remember_me")
         p.submit
-          input(type="submit" name="commit" value="Войти")
+          input(type="submit" name="commit" value="Enter").button.enter
     .login-help
-      a(href="index.html") Забыли пароль? Восстановите его!
-    a(href="#").close Закрыть окно
+      a(href="index.html").modallink Foggot password?
+      br
+      a(href="index.html").modallink Sign In

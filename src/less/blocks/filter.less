@@ -5,6 +5,7 @@
 	align-items: center;
 	margin-bottom: 30px;
 	height: 56px;
+	border-radius: 5px;
 	@media (max-width: 1300px) {
 		position: relative;
 		width: 100%;
@@ -68,7 +69,8 @@
 	margin-left: 11px;
 	border: 1px solid rgba(161, 168, 189, 0.2);
 	padding: 10px 0 11px 15px;
-	background: linear-gradient(to right, #fff, #f0f2f7);
+	background: #f0f2f7;
+	border-radius: 16px;
 	&::-webkit-input-placeholder {
 			color: #b9bfd3;
 			font-size: 13px;
@@ -122,13 +124,14 @@ align-items: center;
 .free-shipping__check {
 	display: none;
 	&:checked + :before {
-		content: "\2713";
+		content: url(../img/icons/check-icons.svg);
 	 	background: #00e2aa;
 	 	color: #fff;
 	 	text-align: center;
 	 	display: flex;
 	 	align-items: center;
 	 	justify-content: center;
+	 	padding-top: 2px;
  	}
 }
 .free-shipping__title {

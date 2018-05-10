@@ -2,9 +2,7 @@
     width: 300px;
     height: 50px;
     text-align: center;
-    border: 3px solid #0000cc;
-    border-radius: 10px;
-    color: #0000cc;
+    color: #343e5c;
     display: none;
     position: absolute;
     top: 0;
@@ -12,24 +10,35 @@
     bottom: 0;
     left: 0;
     margin: 0 auto;
-    margin-top: 125px;
+    padding-top: 125px;
     z-index: 999;
+    font-family: Montserrat;
 }
 #modalSignin:target {
-    display: block;
+    display: block;   
 }
-
 .close {
-    display: inline-block;
-    border: 1px solid #0000cc;
-    color: #0000cc;
+    color: #343e5c;
     padding: 0 12px;
     margin: 10px;
     text-decoration: none;
-    background: #f2f2f2;
     font-size: 14pt;
     cursor:pointer;
+    position: absolute;
+    right: 0;
+    top: 125px;
 }
 .close:hover {
-    background: #e6e6ff;
+}
+.modalstyle {
+    background: #e4e5e7;
+    padding: 25px;
+    border-radius: 5px;
+}
+.modallink {
+    color: #343e5c;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
