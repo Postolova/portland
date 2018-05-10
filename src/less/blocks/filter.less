@@ -41,7 +41,7 @@
 	text-transform: uppercase;
 	cursor: pointer;
 	width: 125px;
-	outline: #FFF;
+	outline: none;
 }
 .select-sort__items {
 	font-size: 11px;
@@ -71,10 +71,15 @@
 	padding: 10px 0 11px 15px;
 	background: #f0f2f7;
 	border-radius: 16px;
+	outline: none;
 	&::-webkit-input-placeholder {
 			color: #b9bfd3;
 			font-size: 13px;
+			border-color: rgba(52, 62, 92, 0.5);
 		}
+	&:focus {
+		border-color: rgba(52, 62, 92, 0.5);
+	}
 }
 .filter-price {
 display: flex;
@@ -175,6 +180,7 @@ align-items: center;
 	font-weight: 700;
 	text-transform: uppercase;
 	cursor: pointer;
+	outline: none;
 }
 .ship-to-select__items {
 	font-size: 11px;
